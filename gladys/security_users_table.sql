@@ -1,0 +1,10 @@
+CREATE TABLE `users` (
+    `ID` INT(6) NOT NULL AUTO_INCREMENT,
+    `username` VARCHAR(50) NOT NULL UNIQUE,
+    `password` VARCHAR(20) NOT NULL,
+    `enabled` BOOLEAN NOT NULL,
+    PRIMARY KEY (`ID`)
+)
+COLLATE='utf8_general_ci'
+ENGINE=InnoDB
+AUTO_INCREMENT=8;
